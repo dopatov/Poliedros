@@ -1,3 +1,5 @@
+package figuras;
+
 /**
  * Created by professor on 16/06/2016.
  */
@@ -19,7 +21,7 @@ public class Dodecaedro extends Poliedro {
     @Override
     public String toString()
     {
-        return "Dodecaedro { " +
+        return "figuras.Dodecaedro { " +
                 "id=" + id +
                 ", arista=" +arista +
                 ", color= " +color+

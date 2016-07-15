@@ -1,3 +1,5 @@
+package figuras;
+
 /**
  * Created by professor on 16/06/2016.
  */
@@ -16,7 +18,7 @@ public class Hexaedro extends Poliedro {
     @Override
     public String toString()
     {
-        return "Hexaedro { " +
+        return "figuras.Hexaedro { " +
                 "id= " + id +
                 ", arista= " +arista +
                 ", color= " +color+

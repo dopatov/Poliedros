@@ -1,3 +1,5 @@
+package figuras;
+
 /**
  * Created by professor on 16/06/2016.
  */
@@ -16,7 +18,7 @@ public class Tetraedro extends Poliedro {
 
     public String toString()
     {
-        return "Tetraedro { " +
+        return "figuras.Tetraedro { " +
                 "id=" + id +
                 ", arista=" + arista +
                 ", color= " +color+

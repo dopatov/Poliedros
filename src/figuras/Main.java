@@ -1,3 +1,5 @@
+package figuras;
+
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 
@@ -7,11 +9,11 @@ import java.util.*;
 // decir el numero de poliedros que tengan un volumen menor de 20 uds
 //decir el numero de poliedros que tengan un volumen entre 20 y 100
 // "     "   "     "   "       "   "          "       superior a 100
-//en un metodo (clase) main nuevo "Mapcolores" crear Poliedros de diferentes colores (verde, amarillo y rojo) y estructurar los poliedros en un
+//en un metodo (clase) main nuevo "figuras.Mapcolores" crear Poliedros de diferentes colores (verde, amarillo y rojo) y estructurar los poliedros en un
 // Hash map con color como K y la V la lista de figuras que tengan ese color.
 //
 //Sobre el proyecto global de poliedros queremos ofrecer la funcionalidad que nos permita mostrar al usuario todos los poliedros agrupados por color, para ello lo que
-// haremos sera declarar un atributo adicional multimap cuya K sera de tipo String (color) y la V serà de tipo Poliedro. Cada vez que un poliedro sea pedido independientemente de su tipo se
+// haremos sera declarar un atributo adicional multimap cuya K sera de tipo String (color) y la V serà de tipo figuras.Poliedro. Cada vez que un poliedro sea pedido independientemente de su tipo se
 // deberá clasificar segun su color, al finalizar dicho programa se deberá mostrar el multimap con las figuras agrupadas por colores.
 
 public class Main {
@@ -151,11 +153,11 @@ public class Main {
         List<Dodecaedro> dodecaedroList=new ArrayList<>();
 
         for (int id = 1; id <= numero; id++) {
-            System.out.println("INSERCIÓN DE DATOS: Dodecaedro");
+            System.out.println("INSERCIÓN DE DATOS: figuras.Dodecaedro");
             System.out.println("Introduce el tamaño de la arista");
             double arista = sc.nextDouble();
             System.out.println("SELECCIÓN DE COLOR");
-            String colorSeleccionado = SolicitaColor("Dodecaedro");
+            String colorSeleccionado = SolicitaColor("figuras.Dodecaedro");
 
             Dodecaedro dodecaedro=new Dodecaedro((id+id+id+id), arista, colorSeleccionado);
 
@@ -172,11 +174,11 @@ public class Main {
         List <Octaedro> OctaedroList =new ArrayList<>();
 
         for (int id = 1; id <= numero; id++) {
-            System.out.println("INSERCIÓN DE DATOS: Octaedro");
+            System.out.println("INSERCIÓN DE DATOS: figuras.Octaedro");
             System.out.println("Introduce el tamaño de la arista");
             double arista = sc.nextDouble();
             System.out.println("SELECCIÓN DE COLOR");
-            String colorSeleccionado = SolicitaColor("Octaedro");
+            String colorSeleccionado = SolicitaColor("figuras.Octaedro");
 
             Octaedro octaedro = new Octaedro((id+id+id), arista, colorSeleccionado);
             multimapColores.put(colorSeleccionado,octaedro);
@@ -192,11 +194,11 @@ public class Main {
         List <Hexaedro> HexaedroList =new ArrayList<>();
 
         for (int id = 1; id <= numero; id++) {
-            System.out.println("INSERCIÓN DE DATOS: Hexaedro");
+            System.out.println("INSERCIÓN DE DATOS: figuras.Hexaedro");
             System.out.println("Introduce el tamaño de la arista");
             double arista = sc.nextDouble();
             System.out.println("SELECCIÓN DE COLOR");
-            String colorSeleccionado = SolicitaColor("Hexaedro");
+            String colorSeleccionado = SolicitaColor("figuras.Hexaedro");
 
             Hexaedro hexaedro=new Hexaedro((id+=id), arista, colorSeleccionado);
 
@@ -214,11 +216,11 @@ public class Main {
         List <Tetraedro> TetraedroList = new ArrayList<>();
 
         for (int id = 1; id <= numero; id++) {
-            System.out.println("INSERCIÓN DE DATOS: Tetraedro ");
+            System.out.println("INSERCIÓN DE DATOS: figuras.Tetraedro ");
             System.out.println("introduce el tamaño de la arista.");
             double arista = sc.nextDouble();
             System.out.println("SELECCIÓN DE COLOR");
-            String colorSeleccionado = SolicitaColor("Tetraedro");
+            String colorSeleccionado = SolicitaColor("figuras.Tetraedro");
 
             Tetraedro tetraedro = new Tetraedro(id, arista, colorSeleccionado);
 

@@ -1,3 +1,5 @@
+package figuras;
+
 /**
  * Created by professor on 16/06/2016.
  */
@@ -18,7 +20,7 @@ public class Octaedro extends Poliedro {
     @Override
     public String toString()
     {
-        return "Octaedro { " +
+        return "figuras.Octaedro { " +
                 "id=" + id +
                 ", arista=" +arista +
                 ", color= " +color+
